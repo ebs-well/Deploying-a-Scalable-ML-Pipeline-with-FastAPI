@@ -11,8 +11,7 @@ def test_data_has_correct_columns():
     Load in the original dataset and ensure it has all the expected features.
     """
     # Your code here
-    project_path = "/home/indigon/projects/Deploying-a-Scalable-ML-Pipeline-with-FastAPI"
-    data_path = os.path.join(project_path, "data", "census.csv")
+    data_path = './data/census.csv'
     data = pd.read_csv(data_path)
 
     expected_cols = {
