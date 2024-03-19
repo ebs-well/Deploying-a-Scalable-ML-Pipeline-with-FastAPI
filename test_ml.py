@@ -23,7 +23,6 @@ def test_data_has_correct_columns(data_file_path):
     assert set(data.columns) == expected_cols
     
 
-
 @pytest.fixture
 def test_data():
     return pd.DataFrame({
