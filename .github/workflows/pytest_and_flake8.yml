@@ -26,7 +26,7 @@ jobs:
     - name: Lint with flake8
       run: |
         pip install flake8
-        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+        flake8 --ignore=E501,E304,E302,F401,E231,W292 main.py local_api.py test_ml.py train_model.py
 
 
 
